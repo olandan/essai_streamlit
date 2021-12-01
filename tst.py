@@ -20,4 +20,3 @@ st.write("""
 Déterminer l'antécédent de nombres pour la fonction définie par f(x)=2x+3
 """)
 
-y = st.slider('Choisir un nombre entier entre -10 et 10', -10, 1, 10)
