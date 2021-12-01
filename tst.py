@@ -4,7 +4,7 @@ def f(x):
     return(2*x+3)
 
 def rev_f(y):
-    return((y-3)/2)
+    return((y-3)*0.5)
 
 st.write("""
 # Calculer une image
