@@ -20,6 +20,6 @@ st.write("""
 Déterminer l'antécédent de nombres pour la fonction définie par f(x)=2x+3
 """)
 
-y = st.slider('Choisir un autre nombre entier entre -10 et 10', -10, 1, 10)
+y = st.slider('Choisir un autre nombre entier entre -10 et 10', -10, 0.1, 10)
 
 st.write("L'antécédent de ",y," pour f(x)=2x+3 est f(",str(rev_f(y)),")=",y)
