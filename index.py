@@ -18,7 +18,8 @@ for i in range(4):
   for j in range(4):
     for k in range(4):
       compt = 1
-      if quest_alg(111,L.nbs) != "none":
+      q = quest_alg(i*100+j*10+k,L.nbs)
+      if  q.LaTeX() != "none":
         st.write("""
     # Question n°"""+str(compt)+""" :""")
         st.latex(q1.quest)
