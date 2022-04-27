@@ -1,10 +1,14 @@
+import streamlit as st
+from random import randint
+from sympy import *
+
 # Import des bibliothèques thématiques
 from themes.nombres import *
 from themes.algebre.algebre_2nde import *
 
 # Import des bibliothèques Python
-from random import randint
-import streamlit as st
+
+
 
 # Zone de test
 # ============
