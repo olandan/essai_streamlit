@@ -4,7 +4,6 @@
 # Import des bibliothèques Python
 # -------------------------------
 
-from random import randint
 
 class liste_nombres:
 
