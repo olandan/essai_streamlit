@@ -3,6 +3,7 @@ from themes.nombres import *
 from themes.algebre.algebre_2nde import *
 
 # Import des bibliothèques Python
+import stremlit as st
 
 # Zone de test
 # ============
