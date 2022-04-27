@@ -4,7 +4,7 @@
 # Import des bibliothèques Python
 # -------------------------------
 
-from sympy import Rational
+from sympy import *
 from random import randint
 
 class liste_nombres:
