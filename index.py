@@ -3,7 +3,7 @@ from random import randint
 from sympy import *
 
 # Import des bibliothèques thématiques
-from themes.nombres import *
+
 from themes.algebre.algebre_2nde import *
 
 # Import des bibliothèques Python
