@@ -1,25 +1,20 @@
+# Import des bibliothèques Python
 import streamlit as st
 from random import randint
-from sympy import *
+from sympy import latex
 
 # Import des bibliothèques thématiques
-
-from themes.algebre.algebre_2nde import *
-
-# Import des bibliothèques Python
-
-
 
 # Zone de test
 # ============
 
 # Tirage d'une liste d'entiers
 # ----------------------------
-L = liste_nombres(6,["N" for i in range(6)])
+L = [randint(2,6) for i in range(6)]
 
 # Test de la classe créant une question d'algèbre
 # -----------------------------------------------
-q1 = quest_alg(111,L.nbs)
+q1 = latex("\\left( "+str(L[0])+"x+"+str(L[1])+"\\right) \\left( "+str(L[2])+"x+"+str(L[3])+"\\right)") 
 
 # Affichage dans streamlit.io
 st.write("""
@@ -27,4 +22,4 @@ st.write("""
 Développer l'expression ci-dessous :
 """)
 
-st.write(q1.quest)
+st.write(q1)
