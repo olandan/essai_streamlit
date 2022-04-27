@@ -50,7 +50,7 @@ class quest_alg:
 
         # Méthode créant une instance
         self.niveau = niveau # code de la question voulue
-        self.var = st.symbols(variable) # variable de la question
+        self.var = variable # variable de la question
         self.liste = liste # liste de nombres
         self.aff_nbs = self.Aff_Nbs() # code LaTeX des nombres
         self.quest = self.LaTeX() # création du code de la question
