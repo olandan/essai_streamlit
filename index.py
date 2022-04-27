@@ -10,7 +10,7 @@ import streamlit as st
 
 # Tirage d'une liste d'entiers
 # ----------------------------
-L = liste_nombres(6,["D" for i in range(6)])
+L = liste_nombres(6,["Q" for i in range(6)])
 
 # Test de la classe créant une question d'algèbre
 # -----------------------------------------------
