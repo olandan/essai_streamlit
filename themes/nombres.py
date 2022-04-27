@@ -30,6 +30,6 @@ class liste_nombres:
             elif self.nb_type[i] == "Q" :
                 nbs.append([randint(1,12),randint(2,6)])
                 while nbs[-1] % 1 == 0:
-                    nbs[-1] = [(randint(1,12),randint(2,6)]
+                    nbs[-1] = [randint(1,12),randint(2,6)]
 
         return(nbs)
