@@ -15,7 +15,7 @@ L = liste_nombres(6,["N" for i in range(6)])
 
 # Test de la classe créant une question d'algèbre
 # -----------------------------------------------
-q1 = quest_alg((i+1)*100+(j+1)*10+(k+1),L.nbs)
+q1 = quest_alg(111,L.nbs)
 
 # Affichage dans streamlit.io
 st.write("""
