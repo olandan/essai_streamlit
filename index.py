@@ -15,7 +15,8 @@ L = liste_nombres(6,["N" for i in range(6)])
 # -----------------------------------------------
 q1 = quest_alg(111,L.nbs)
 st.write("""
-# Développer l'expression ci-dessous :
+# Développer avec une double distributivité
+Développer l'expression ci-dessous :
 """)
 
 st.latex(q1.quest)
