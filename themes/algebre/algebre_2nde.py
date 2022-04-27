@@ -40,7 +40,6 @@ from themes.nombres import *
 
 # Import des bibliothèques
 # ------------------------
-from sympy import Rational, latex, symbols
 from random import randint
 
 # Définition de la classe
