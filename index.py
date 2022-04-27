@@ -2,7 +2,7 @@
 import streamlit as st
 
 # Import des bibliothèques thématiques
-import themes.nombres
+from themes.nombres import *
 from themes.algebre.algebre_2nde import *
 
 # Zone de test
