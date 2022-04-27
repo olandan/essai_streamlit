@@ -20,7 +20,6 @@ for i in range(4):
       compt = 1
       q = quest_alg(i*100+j*10+k,L.nbs)
       if  q.LaTeX() != "None":
-        st.write("""
-    # Question n°""",str(compt),""" :""")
+        st.write("# Question n°",str(compt)," :")
         st.latex(q.quest)
-        compt += 1
+        compt = compt + 1
