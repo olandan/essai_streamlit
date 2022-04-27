@@ -3,6 +3,7 @@ from themes.nombres import *
 from themes.algebre.algebre_2nde import *
 
 # Import des bibliothèques Python
+from random import randint
 import streamlit as st
 
 # Zone de test
