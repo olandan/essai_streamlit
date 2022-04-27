@@ -14,10 +14,11 @@ L = liste_nombres(6,["Q" for i in range(6)])
 
 # Test de la classe créant une question d'algèbre
 # -----------------------------------------------
-q1 = quest_alg(111,L.nbs)
-st.write("""
-# Développer avec une double distributivité
-Développer l'expression ci-dessous :
-""")
-
-st.latex(q1.quest)
+for i in range(4):
+  for j in range(4):
+    for k in range(4):
+      compt = 1
+      if quest_alg(111,L.nbs) != "none":
+        st.write("""
+    # Question n°"""+str(compt)+""" :""")
+        st.latex(q1.quest)
