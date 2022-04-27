@@ -40,7 +40,7 @@ from themes.nombres import *
 
 # Import des bibliothèques
 # ------------------------
-from random import randint
+
 
 # Définition de la classe
 # -----------------------
