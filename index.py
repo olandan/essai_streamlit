@@ -1,7 +1,7 @@
 # Import des bibliothèques Python
 import streamlit as st
 from random import randint
-from sympy import *
+from sympy import simplify
 
 # Import des bibliothèques thématiques
 
