@@ -65,7 +65,7 @@ class quest_alg:
             elif type(self.liste[i]) == float:
                 aff_nbs.append(str(int((self.liste[i]*100)//100))+","+str(int((self.liste[i]*100)%100)))
             else:
-                aff_nbs.append("\\dfrac{"+str(self.liste[i].p)+"}{"+str(self.liste[i].q)+"}")
+                aff_nbs.append("\\dfrac{"+str(self.liste[i][0])+"}{"+str(self.liste[i][1])+"}")
         return(aff_nbs)
 
     def LaTeX(self):
@@ -132,10 +132,10 @@ class quest_alg:
                 elif type(coef[i]) == float:
                     aff_coef.append(str(int((coef[i]*100)//100))+","+str(int((coef[i]*100)%100)))
                 else:
-                    if coef[i].q == 1:
+                    if coef[i][1] == 1:
                         aff_coef.append(str(coef[i].p))
                     else:
-                        aff_coef.append("\\dfrac{"+str(coef[i].p)+"}{"+str(coef[i].q)+"}")
+                        aff_coef.append("\\dfrac{"+str(coef[i][0])+"}{"+str(coef[i][1])+"}")
             # a. Cas ax^2+2abx+b^2        
             if self.niveau % 10 == 1:
                 return(str(aff_coef[0]+str(self.var)+"^2 +"+aff_coef[1]+str(self.var)+"+"+aff_coef[2]))
