@@ -29,8 +29,8 @@ class liste_nombres:
                 nbs.append(round(randint(1,12)+0.1*randint(0,9)+0.01*randint(1,9),2))
             # Si on veut un nombre rationnel
             elif self.nb_type[i] == "Q" :
-                nbs.append(Rational(randint(1,12),randint(2,6)))
+                nbs.append([randint(1,12),randint(2,6)])
                 while nbs[-1]%1 == 0:
-                    nbs[-1] = Rational(randint(1,12),randint(2,6))
+                    nbs[-1] = [(randint(1,12),randint(2,6)]
 
         return(nbs)
