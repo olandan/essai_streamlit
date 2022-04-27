@@ -1,4 +1,5 @@
 import streamlit as st
+from sympy import *
 
 def f(x):
     return(2*x+3)
