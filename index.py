@@ -23,3 +23,4 @@ for i in range(4):
         st.write("""
     # Question n°"""+str(compt)+""" :""")
         st.latex(q.quest)
+        compt += 1
