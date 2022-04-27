@@ -3,7 +3,6 @@ from themes.nombres import *
 from themes.algebre.algebre_2nde import *
 
 # Import des bibliothèques Python
-from sympy import *
 
 # Zone de test
 # ============
