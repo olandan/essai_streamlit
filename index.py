@@ -17,9 +17,7 @@ L = liste_nombres(6,["Q" for i in range(6)])
 for i in range(4):
   for j in range(4):
     for k in range(4):
-      compt = 1
       q = quest_alg(i*100+j*10+k,L.nbs)
       if  q.LaTeX() != "None":
-        st.write("# Question n°",str(compt)," :")
+        st.write("# Question n°",str(i*100+j*10+k)," :")
         st.latex(q.quest)
-        compt = compt + 1
