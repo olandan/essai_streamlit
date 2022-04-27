@@ -80,46 +80,46 @@ class quest_alg:
         if self.niveau // 10 == 10:
             # a. Type a(bx+c)
             if self.niveau % 10 == 1:
-                return(latex(self.aff_nbs[0]+str(self.var)+"\\left("+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2])+"\\right)")
+                return(str(self.aff_nbs[0]+str(self.var)+"\\left("+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2])+"\\right)")
             # b. Type a(bx-c)
             elif self.niveau % 10 == 2:
-                return(latex(self.aff_nbs[0]+str(self.var)+"\\left("+self.aff_nbs[1]+str(self.var)+"-"+self.aff_nbs[2])+"\\right)")
+                return(str(self.aff_nbs[0]+str(self.var)+"\\left("+self.aff_nbs[1]+str(self.var)+"-"+self.aff_nbs[2])+"\\right)")
             else:
                 return("None")
         # 1. Double distributivité
         elif self.niveau // 10 == 11:
             # a. Type (ax+b)(cx+d)
             if self.niveau % 10 == 1:
-                return(latex("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"+"+self.aff_nbs[3])+"\\right)")
+                return(str("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"+"+self.aff_nbs[3])+"\\right)")
             # b. Type (ax-b)(cx+d)
             elif self.niveau % 10 == 2:
-                return(latex("\\left( "+self.aff_nbs[0]+str(self.var)+"-"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"+"+self.aff_nbs[3])+"\\right)")
+                return(str("\\left( "+self.aff_nbs[0]+str(self.var)+"-"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"+"+self.aff_nbs[3])+"\\right)")
             # c. Type (ax+b)(cx-d)
             elif self.niveau % 10 == 3:
-                return(latex("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"-"+self.aff_nbs[3])+"\\right)")
+                return(str("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"-"+self.aff_nbs[3])+"\\right)")
             # d. Type (ax-b)(cx-d)
             elif self.niveau % 10 == 4:
-                return(latex("\\left( "+self.aff_nbs[0]+str(self.var)+"-"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"-"+self.aff_nbs[3])+"\\right)")
+                return(str("\\left( "+self.aff_nbs[0]+str(self.var)+"-"+self.aff_nbs[1]+"\\right) \\left("+self.aff_nbs[2]+str(self.var)+"-"+self.aff_nbs[3])+"\\right)")
             else:
                 return("None")
         # 2. Identités remarquables
         elif self.niveau // 10 == 12:
             # a. Cas (a+b)^2
             if self.niveau % 10 == 1:
-                return(latex("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right)^2"))
+                return(str("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right)^2"))
             # b. Cas (a-b)^2
             elif self.niveau % 10 == 2:
-                return(latex("\\left( "+self.aff_nbs[0]+str(self.var)+"-"+self.aff_nbs[1]+"\\right)^2"))
+                return(str("\\left( "+self.aff_nbs[0]+str(self.var)+"-"+self.aff_nbs[1]+"\\right)^2"))
             # c. Cas (a+b)(a-b)
             elif self.niveau % 10 == 3:
-                return(latex("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right) \\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right)"))
+                return(str("\\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right) \\left( "+self.aff_nbs[0]+str(self.var)+"+"+self.aff_nbs[1]+"\\right)"))
             else:
                 return("None")
 
         # Factorisations
         # 1. Avec facteur commun
         elif self.niveau // 10 == 21 :
-            return(latex(self.aff_nbs[0]+str(self.var)+"^2 +"+self.aff_nbs[1]+str(self.var)))
+            return(str(self.aff_nbs[0]+str(self.var)+"^2 +"+self.aff_nbs[1]+str(self.var)))
         # 2. Identités remarquables
         elif self.niveau // 10 == 22:
 
@@ -138,29 +138,29 @@ class quest_alg:
                         aff_coef.append("\\dfrac{"+str(coef[i].p)+"}{"+str(coef[i].q)+"}")
             # a. Cas ax^2+2abx+b^2        
             if self.niveau % 10 == 1:
-                return(latex(aff_coef[0]+str(self.var)+"^2 +"+aff_coef[1]+str(self.var)+"+"+aff_coef[2]))
+                return(str(aff_coef[0]+str(self.var)+"^2 +"+aff_coef[1]+str(self.var)+"+"+aff_coef[2]))
             # b. Cas ax^2-2abx+b^2
             elif self.niveau % 10 == 2:
-                return(latex(aff_coef[0]+str(self.var)+"^2 -"+aff_coef[1]+str(self.var)+"+"+aff_coef[2]))
+                return(str(aff_coef[0]+str(self.var)+"^2 -"+aff_coef[1]+str(self.var)+"+"+aff_coef[2]))
             # c. Cas a^2-b^2
             elif self.niveau % 10 == 3:
-                return(latex(aff_coef[0]+str(self.var)+"^2 -"+aff_coef[1]+"^2"))
+                return(str(aff_coef[0]+str(self.var)+"^2 -"+aff_coef[1]+"^2"))
             else:
                 return("None")
         # 3. Écritures quotients
         elif self.niveau // 10 == 23:
             # a. Type a/(cx+d)+e
             if self.niveau % 10 == 1:
-                return(latex("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}+"+self.aff_nbs[3]))
+                return(str("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}+"+self.aff_nbs[3]))
             # b. Type a/(cx+d)-e
             elif self.niveau % 10 == 2:
-                return(latex("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}-"+self.aff_nbs[3]))
+                return(str("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}-"+self.aff_nbs[3]))
             # c. Type a/(cx+d)+e/(fx+g)
             elif self.niveau % 10 == 3:
-                return(latex("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}+\\dfrac{"+self.aff_nbs[3]+"}{"+self.aff_nbs[4]+str(self.var)+"+"+self.aff_nbs[5]+"}"))
+                return(str("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}+\\dfrac{"+self.aff_nbs[3]+"}{"+self.aff_nbs[4]+str(self.var)+"+"+self.aff_nbs[5]+"}"))
             # d. Type a/(cx+d)-e/(fx+g)
             elif self.niveau % 10 == 4:
-                return(latex("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}-\\dfrac{"+self.aff_nbs[3]+"}{"+self.aff_nbs[4]+str(self.var)+"+"+self.aff_nbs[5]+"}"))
+                return(str("\\dfrac{"+self.aff_nbs[0]+"}{"+self.aff_nbs[1]+str(self.var)+"+"+self.aff_nbs[2]+"}-\\dfrac{"+self.aff_nbs[3]+"}{"+self.aff_nbs[4]+str(self.var)+"+"+self.aff_nbs[5]+"}"))
             else:
                 return("None")
 
