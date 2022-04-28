@@ -31,7 +31,7 @@ class liste_nombres:
                 nbs.append([randint(1,12),randint(2,6)])
                 while nbs[-1][0] % nbs[-1][1] == 0:
                     nbs[-1] = [randint(1,12),randint(2,6)]
-                if max(nbs[-1]) % min(nbs[-1]) == 0:
+                if (max(nbs[-1]) % min(nbs[-1]) == 0):
                     nbs[-1] = [nbs[-1][0]//min(nbs[-1]),nbs[-1][1]//min(nbs[-1])]
 
         return(nbs)
